@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Identity to Authority — Northgate Cryptography Research</title>
+<meta name="description" content="Research on AI-agent authorization and continuous trust: why authority itself should become continuously stateful as autonomous systems mature.">
+<link rel="canonical" href="https://northgatecryptography.com/research/">
+<meta property="og:title" content="From Identity to Authority — Northgate Cryptography">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/"><span class="mark">NC</span> Northgate Cryptography</a>
+    <nav class="site">
+      <a href="/">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="intellectual-property.html">Intellectual Property</a>
+      <a href="david-jensen.html">Founder</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Research</p>
+    <h1>From identity to authority.</h1>
+    <p class="lede">Traditional security treats authentication and authorization as distinct events. Autonomous agents challenge that model.</p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <section>
+      <div class="flow" aria-label="From identity signals to runtime enforcement">
+        <div class="node">Identity signals</div>
+        <div class="arr">&darr;</div>
+        <div class="node">Trust assessment</div>
+        <div class="arr">&darr;</div>
+        <div class="node">Continuous verification</div>
+        <div class="arr">&darr;</div>
+        <div class="node">Authorization state</div>
+        <div class="arr">&darr;</div>
+        <div class="node">Delegated agent authority</div>
+        <div class="arr">&darr;</div>
+        <div class="node accent">Runtime enforcement</div>
+      </div>
+    </section>
+
+    <section>
+      <p class="lead">Traditional security architectures largely treat authentication and authorization as distinct events: establish identity, issue authority, then permit activity until expiration or revocation.</p>
+      <p>Autonomous agents challenge that model. An agent may operate for extended periods, interact with multiple services, delegate to additional agents, hold credentials across systems, and perform actions long after the original authorization event.</p>
+      <p>Northgate Cryptography's research examines whether authority itself should become <strong>continuously stateful</strong> &mdash; changing as confidence in the originating authority, device, operating context, or agent behavior changes.</p>
+      <p style="color:var(--muted);">A deeper series of technical articles on agent authorization, delegated authority, pre-execution enforcement, and continuous authentication is in preparation.</p>
+    </section>
+
+    <hr class="rule">
+    <p class="back"><a href="/">&larr; Northgate Cryptography</a></p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap-wide">
+    <div class="disclaimer">
+      Northgate Cryptography does not claim affiliation with or endorsement by government agencies, standards bodies, or third-party vendors referenced in its research.
+    </div>
+    <div>&copy; 2026 Northgate Cryptography, Inc.</div>
+  </div>
+</footer>
+</body>
+</html>
