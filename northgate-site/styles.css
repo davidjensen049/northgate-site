@@ -124,3 +124,13 @@ main{padding:0 0 clamp(40px,6vw,80px)}
 .foot nav a{color:var(--ink-70)}.foot nav a:hover{color:var(--flag)}
 .foot .fine{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right;letter-spacing:.04em}
 @media(max-width:700px){.foot .grid{grid-template-columns:1fr}.foot .fine{text-align:left}}
+
+/* homepage framework-alignment strip */
+.strip{border-bottom:1px solid var(--ink);background:var(--stone-2);padding:clamp(26px,3.6vw,40px) 0}
+.strip .grid2{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.strip .lbl{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--flag)}
+.strip p{margin:0 0 18px;font-family:var(--serif);font-size:clamp(17px,1.7vw,20px);line-height:1.45;color:var(--ink);max-width:62ch}
+.strip .orgs{list-style:none;display:flex;flex-wrap:wrap;gap:0;margin:0 0 18px;padding:0}
+.strip .orgs li{font-family:var(--disp);font-weight:700;font-size:16px;letter-spacing:-.01em;padding-right:18px;margin-right:18px;border-right:1px solid var(--rule-2);line-height:1.2}
+.strip .orgs li:last-child{border-right:0;margin-right:0;padding-right:0}
+@media(max-width:860px){.strip .grid2{grid-template-columns:1fr;gap:14px}}
