@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Identity to Authority — Northgate Cryptography Research</title>
+<meta name="description" content="Research on AI-agent authorization and continuous trust: why authority itself should become continuously stateful as autonomous systems mature.">
+<link rel="canonical" href="https://northgatecryptography.com/research/">
+<meta property="og:title" content="From Identity to Authority — Northgate Cryptography">
+<meta property="og:description" content="Why authority itself should become continuously stateful as autonomous systems mature.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <div class="runhead"><span>Security Research &amp; Engineering</span><span>Est. MMXXV &middot; Orange County, California</span></div>
+    <div class="bar">
+      <a class="wordmark" href="/">Northgate Cryptography</a>
+      <nav class="nav">
+        <a href="/">Index</a>
+        <a href="research.html" class="on">Research</a>
+        <a href="intellectual-property.html">Patents</a>
+        <a href="david-jensen.html">Founder</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h1 class="rise">From identity to authority.</h1>
+        <p class="lead rise d2">Traditional security treats authentication and authorization as distinct, one-time events. Autonomous agents break that assumption — and force a different model of trust.</p>
+      </div>
+      <div class="meta-rail rise d3">
+        <dl>
+          <div><dt>Field</dt><dd>AI-agent security · continuous trust</dd></div>
+          <div><dt>Program since</dt><dd>2025</dd></div>
+          <div><dt>Output</dt><dd>3 pending U.S. patent families</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="k"><b>§ 01</b> The premise</div>
+        <h2>Authority is treated as fixed. It shouldn't be.</h2>
+      </div>
+      <div class="read">
+        <div class="aside">Authentication, then authorization, then activity until expiry.<br><br>The assumption autonomous agents break.</div>
+        <div class="body">
+          <p class="lede">Most architectures grant authority once and let it stand until revocation.</p>
+          <p>Traditional security architectures largely treat authentication and authorization as distinct events: establish identity, issue authority, then permit activity until expiration or revocation.</p>
+          <p>Autonomous agents challenge that model. An agent may operate for extended periods, interact with many services, delegate to further agents, hold credentials across systems, and act long after the original authorization event.</p>
+          <p>Northgate Cryptography's research examines whether authority itself should become <strong>continuously stateful</strong> — changing as confidence in the originating authority, device, operating context, or agent behavior changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="k"><b>§ 02</b> The model</div>
+        <h2>Trust evaluated continuously, enforced at runtime.</h2>
+      </div>
+      <div class="read">
+        <div class="aside">
+          <div class="flow" aria-label="From identity signals to runtime enforcement">
+            <div class="n">Identity signals</div><div class="j"></div>
+            <div class="n">Trust assessment</div><div class="j"></div>
+            <div class="n">Continuous verification</div><div class="j"></div>
+            <div class="n">Authorization state</div><div class="j"></div>
+            <div class="n">Delegated agent authority</div><div class="j"></div>
+            <div class="n">Runtime enforcement</div>
+          </div>
+        </div>
+        <div class="body">
+          <p>In a continuously stateful model, identity signals feed an ongoing trust assessment rather than a single gate. Authorization becomes a live state that tracks that assessment, and the authority an agent carries is bound to the current verified state of the human or organization that delegated it — not frozen at the moment of delegation.</p>
+          <p>Enforcement moves to runtime: before an agent acts, the system re-checks whether the authority behind that action still holds. When confidence drops — a device falls out of posture, behavior drifts, context changes — authority narrows or fails secure, without waiting for an expiry window.</p>
+          <p><a class="inline" href="intellectual-property.html">See the patent portfolio →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="wordmark">Northgate Cryptography</div>
+        <p class="disc">Security research &amp; engineering.<br>Orange County, California.</p>
+      </div>
+      <nav>
+        <a href="research.html">Research</a>
+        <a href="intellectual-property.html">Patents</a>
+        <a href="david-jensen.html">Founder</a>
+      </nav>
+      <div class="fine">© MMXXVI<br>Northgate Cryptography, Inc.</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
